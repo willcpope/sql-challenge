@@ -53,7 +53,7 @@ CREATE TABLE "titles" (
     "to_date" date   NOT NULL
 );
 
--- Add foreign keys
+-- Add foreign keys after data is imported into tables above
 ALTER TABLE "dept_emp" ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employees" ("emp_no");
 
